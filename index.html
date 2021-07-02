@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Survey Form</title>
+</head>
+<body>
+   <div id="main">
+       <header>
+           <h1 id="title" class="text-center">Anime Survey Form</h1>
+           <p id="description" class="description text-center">How did you first get acquainted with anime?</p>
+       </header>
+       
+       <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name" style="font-size: 18px; line-height: 40px;">Name:</label>
+                <input class="ip" type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email" style="font-size: 18px; line-height: 40px;">Email:</label>
+                <input class="ip" type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number" style="font-size: 18px; line-height: 40px;">Your Age:</label>
+                <input class="ip" type="number" id="number" min="12" max="100" name="number" placeholder="Your age" required>
+            </div>
+
+            <div class="form-group">
+                <p>What is your definition of anime?</p>
+                <label id="txtarea">
+                    <textarea name="definition" id="txtarea"></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>If you were to rank your involvement with anime on a 1 - 6 scale (with 6 being the highest), would you say at least a 4?</p>
+                <label>
+                    <input name="involvement" value="four" type="radio" class="input-radio" checked>Yes, 4
+                </label> <br>
+                <label>
+                    <input name="involvement" value="five" type="radio" class="input-radio">Yes, 5
+                </label> <br>
+                <label>
+                    <input name="involvement" value="six" type="radio" class="input-radio">Yes, 6
+                </label><br>
+                <label>
+                    <input name="involvement" value="not" type="radio" class="input-radio">No. If no, thank you for your time, you do not have to finish the survey.
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>How were you first introduced to anime?</p>
+                <select class="ip" name="intro" id="dropdown" required>
+                    <option value="friend">By a friend</option>
+                    <option value="family-member">By a family member</option>
+                    <option value="internet">The Internet</option>
+                    <option value="television">Television</option>
+                    <option value="video-game">Video Game</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How often do you watch anime and/or read manga?</p>
+                <label>
+                    <input name="often" value="everyday" type="checkbox" class="input-radio" checked>Every day
+                </label> <br>
+                <label>
+                    <input name="often" value="couple" type="checkbox" class="input-radio">A couple times a week
+                </label> <br>
+                <label>
+                    <input name="often" value="fewtime" type="checkbox" class="input-radio">A few times a month
+                </label><br>
+                <label>
+                    <input name="often" value="almost" type="checkbox" class="input-radio">Almost never
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Have you ever tried cosplay?</p>
+                <label>
+                    <input name="gender" value="yes1" type="radio" class="input-radio" checked>Yes, at a convention
+                </label> <br>
+                <label>
+                    <input name="gender" value="yes2" type="radio" class="input-radio">Yes, with friends
+                </label> <br>
+                <label>
+                    <input name="gender" value="yes3" type="radio" class="input-radio">Yes, but never with anyone else
+                </label> <br>
+                <label>
+                    <input name="gender" value="no1" type="radio" class="input-radio">No (skip the next question)
+                </label> <br>
+                <label>
+                    <input name="gender" value="no2" type="radio" class="input-radio">No, what's cosplay? (skip the next question)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>If you posted pictures of your cosplay experience online, on which websites did you post?</p>
+                <label id="txtarea">
+                    <textarea name="cosplay" id="txtarea"></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+       </form>
+   </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
